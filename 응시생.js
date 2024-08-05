@@ -3,7 +3,7 @@ if (typeof clusterer === 'undefined') {
     var clusterer = new kakao.maps.MarkerClusterer({
         map: map, // 마커들을 클러스터로 관리하고 표시할 지도 객체 
         averageCenter: true, // 클러스터의 중앙을 계산하여 위치를 설정
-        minLevel: 5 // 클러스터링을 시작할 최소 지도 레벨
+        minLevel: 1 // 클러스터링을 시작할 최소 지도 레벨
     });
 }
 
