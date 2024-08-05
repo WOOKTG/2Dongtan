@@ -17,7 +17,7 @@
     var container = document.getElementById('map'); 
     var options = { 
         center: new kakao.maps.LatLng(37.181749832845654, 127.12283869416252), 
-        level:6
+        level: 6
     };
 
     var map = new kakao.maps.Map(container, options); 
@@ -37,7 +37,9 @@
         image: markerImage // 마커이미지 설정 
     });
 
-    
+    // 마커를 지도에 추가합니다
+    marker.setMap(map);
+
 </script>
 <button id="퇴원">퇴원생</button>
 <button id="재원">재원</button>
